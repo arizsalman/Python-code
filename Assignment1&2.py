@@ -81,3 +81,34 @@ for number in range(2):
 # Range me hum sirf 3 argument de sakte hn (one is kaha se start karna  he , or second is kaha tak ke jalana he , or third is Last ketna add karna he )
 for number1 in range(2, 7, 3):
     print("Attempt", number1, number1*".")
+
+
+# Loops ;repeated work ke leye hote he
+successful1 = False
+for number9 in range(3):
+    print("Attmept ")
+    if successful1:
+        print("Successful")
+        break
+else:
+    print("Attmept in 3 time and failed ")
+
+# Loop second
+# for X in Y: ka matlab hota hai:
+# Y me jitne elements hain, unko ek ek karke X me store karo
+friuts_a = ["apple", 'banana', 'graps']
+for friut in friuts_a:
+    print(friut)
+
+name = ['ariz', 'salman', "ali"]
+for English in name:
+    print(English)
+
+for x in range(5):
+    print(x)
+
+# Outer loop ek baar chalta hai → uske andar inner loop poora chalta hai
+# Outer loop ek baar chalta hai -> uske andar inner loop poora chalta hai
+for x in range(5):
+    for y in range(3):
+        print(f'{x} , {y}')
