@@ -1,0 +1,46 @@
+
+
+# Kese kam ko bar bar repeat kerne ke leyge used kerte he
+# num = 100
+# while num > 0:
+#     print(num)
+#     num //= 2
+
+# Example no 2  while loop
+# name = ""
+# while name != "ariz":
+#     # print("Wrong Name", name)
+#     name = input(">")
+#     if name != 'ariz':
+#         print("Wrong Name")
+# print("Right Name")
+
+
+# Infinite loop
+#  Jab tak is ke value true se false nahe ho jate jab tak ye jalta rahe ga
+# Example infinite loop
+# while True:
+#     name1 = input("Enter your name ")
+#     if name1 == "ariz":
+#         print('Welcome ariz')
+#         break    # ye loop ko ruta he
+#     else:
+#         print("try again")
+
+
+#  # Use while loop to print numbers from 1 to 5.
+
+# num = 1
+# while num <= 5:
+#     print(num)
+#     num += 1
+
+# # Use while loop to keep asking user's name until they type "ariz".
+# # ( Hint: while name != "ariz")
+Nam =" "
+while Nam != "ariz":
+    Nam = input("Enter your name ")
+    if Nam !="ariz":
+       print(f'Wrong{Nam}')
+  
+print(f"Right {Nam}")
