@@ -68,3 +68,19 @@ for sn in range(5, 0, -1):
     for t in range(sn):
         print('*', end=" ")
     print()
+
+
+# enumerate() 2 values return karta hai:
+
+#   1 is index
+
+#  2 is item
+
+
+fruit = ["apple", "graps", "banana"]
+for index, value in enumerate(fruit):
+    print(index, value)
+
+word = input("Enter your name")
+for le in word:
+    print(le, end="")
