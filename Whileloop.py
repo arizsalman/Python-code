@@ -36,11 +36,24 @@
 #     num += 1
 
 # # Use while loop to keep asking user's name until they type "ariz".
-# # ( Hint: while name != "ariz")
-Nam =" "
-while Nam != "ariz":
-    Nam = input("Enter your name ")
-    if Nam !="ariz":
-       print(f'Wrong{Nam}')
-  
-print(f"Right {Nam}")
+# # # ( Hint: while name != "ariz")
+# Nam =" "
+# while Nam != "ariz":
+#     Nam = input("Enter your name ")
+#     if Nam !="ariz":
+#        print(f'Wrong{Nam}')
+
+# print(f"Right {Nam}")
+
+
+i = 0
+while i <= 10:
+    print(f"{i}times Ariz ")
+    i += 1  # i= i+1 ye be tareka hi
+
+
+num = int(input('what is number'))
+i = 0
+while i <= 10:
+    print(f'{num} X {i}= {num*i}')
+    i = i+1

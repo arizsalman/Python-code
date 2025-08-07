@@ -62,20 +62,44 @@
 # show("GRADE JERNE OF CODE")
 
 
-def add(a, b):
-    return (a+b)
+# def add(a, b):
+#     return (a+b)
 
 
-def subt(e, r):
-    return (e-r)
+# def subt(e, r):
+#     return (e-r)
 
 
-def mul(x, y):
-    return (x*y)
+# def mul(x, y):
+#     return (x*y)
 
 
-print(add(20, 10))
+# print(add(20, 10))
 
-print(subt(10, 5))
-print(mul(2, 20))
+# print(subt(10, 5))
+# print(mul(2, 20))
 
+
+def add(num1):
+    return 20+30
+
+
+print(add(1))
+
+
+def add1(num1, num2):
+    return 10+100
+
+
+print(add1(2, 2))
+
+
+# ni = int(input('enter your frist number'))
+# nu = int(input('enter your second number'))
+
+
+# def np(ni, nu):
+#     return (ni+nu)
+
+
+# print(np(ni, nu))

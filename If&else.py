@@ -19,9 +19,22 @@
 #     print("c")
 
 
-list = ["ariz", 21, 2, "apple", "graps", "ali"]
-user_input = int(str(input("Enter your Value")))
-if user_input in list:
-    print("your input value is exist in list")
+# list = ["ariz", 21, 2, "apple", "graps", "ali"]
+# user_input = int(str(input("Enter your Value")))
+# if user_input in list:
+#     print("your input value is exist in list")
+# else:
+#     print("your user are not exist in the list")
+
+
+a = int(input('Enter a First Number'))
+b = int(input('Enter a second number'))
+
+if a <= b:
+    print(f"{a} is Less Than or Equal to {b}")
 else:
-    print("your user are not exist in the list")
+    print(f"{a} is NOT Less Than or Equal to {b}")
+if a >= b:
+    print(f"{a} is Greater Than or Equal to {b}")
+else:
+    print(f"{a} is NOT Greater Than or Equal to {b}")
