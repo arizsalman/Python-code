@@ -46,14 +46,43 @@
 # print(f"Right {Nam}")
 
 
-i = 0
-while i <= 10:
-    print(f"{i}times Ariz ")
-    i += 1  # i= i+1 ye be tareka hi
+# i = 0
+# while i <= 10:
+#     print(f"{i}times Ariz ")
+#     i += 1  # i= i+1 ye be tareka hi
 
 
-num = int(input('what is number'))
-i = 0
-while i <= 10:
-    print(f'{num} X {i}= {num*i}')
-    i = i+1
+# num = int(input('what is number'))
+# i = 0
+# while i <= 10:
+#     print(f'{num} X {i}= {num*i}')
+#     i = i+1
+
+
+while True:
+    str1 = input('Enter your First number or "exit" to quit :')
+    if str1 == 'exit':
+        break
+
+    str2 = input('Enter your Second number  :')
+    Operator = input('*,+,-,/ :')
+
+    try:
+
+        num1 = int(str1)
+        num2 = int(str2)
+
+        if Operator == '+':
+            print("Result:", num1 + num2)
+        elif Operator == '-':
+            print("Result ", num1-num2)
+        elif Operator == '*':
+            print("Result ", num1*num2)
+        elif Operator == '/':
+            print("Result ", num1/num2)
+        else:
+            print("Invalid operator.")
+    except ValueError:
+        print("Invalid number. Please enter numeric values.")
+    except ZeroDivisionError:
+        print("Cannot divide by zero.")

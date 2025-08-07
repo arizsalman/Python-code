@@ -103,3 +103,24 @@ print(add1(2, 2))
 
 
 # print(np(ni, nu))
+
+
+numa = int(input("Enter the  First number"))
+numb = int(input("Enter the   Second number"))
+
+
+def sqr(numa, numb):
+    return (numa*numa, numb*numb)
+
+
+print(sqr(numa, numb))
+
+print(
+    f'The sum of Your  first number is {numa*numa}\n sum of second number is {numb*numb}')
+
+
+def great(name):
+    return ('Hello', name)
+
+
+print(great("Ariz"))
