@@ -33,3 +33,11 @@ print(number)
 number.remove(2)
 print(number)
 print(number[0:3])
+
+
+# Reverse string
+Alfh = str(input("Enter your Nonu"))
+listA = sorted(Alfh, reverse=True)
+listB = sorted(Alfh, reverse=False)
+print(f'Your Name is Reverse  True ;{listA}')
+print(f'Your Name is Reverse False ;{listB}')

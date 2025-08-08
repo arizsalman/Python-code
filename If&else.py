@@ -48,18 +48,91 @@
 #     print(f'Your age is {age} are not eligeble ')
 
 
-grade = int(input("what is your grade :"))
+# grade = int(input("what is your grade :"))
 
-if grade >= 20 and grade <= 49:
-    print(f'you are fail')
+# if grade >= 20 and grade <= 49:
+#     print(f'you are fail')
 
-elif grade >= 50 and grade <= 79:
-    print(f'your Grade is B')
+# elif grade >= 50 and grade <= 79:
+#     print(f'your Grade is B')
 
-elif grade >= 79 and grade <= 89:
-    print(f'your Grade is A')
+# elif grade >= 79 and grade <= 89:
+#     print(f'your Grade is A')
 
-elif grade >= 89 and grade <= 100:
-    print(f'your Grade is A+')
+# elif grade >= 89 and grade <= 100:
+#     print(f'your Grade is A+')
 
-print('Thank You')
+# print('Thank You')
+
+
+# Question  Even or odd number check
+
+# OE = int(input("Enter the  Even and Odd Number "))
+
+# if OE % 2 == 0:
+#     print(f'The number is {OE} this is Even number ')
+
+# else:
+#     print(f' This number is {OE} odd')
+
+
+# inf = int(input("Enter number  "))
+# if inf >= 20:
+#     print(f' the number is greater then{inf}')
+# else:
+#     print(f"the number is lessthen 20 your number{inf} ")
+
+
+# Prime  number Not true
+# Prime number  1 se bara ho
+# surf apne   number se divide ho  ye prime number hota he
+
+
+# new_num = int(input("Enter your number "))
+# if new_num > 1:
+#     for i in range(2, new_num):
+#         if new_num % i == 0:
+#             print(f' the number is not prime number{new_num}')
+#             break
+#     else:
+#         print(f'Your number is prime number {new_num}')
+
+# else:
+#     print(f'Prime number 1 se bara hota hai')
+
+
+# new_num = int(input("Enter your number "))
+# for i in range(2, new_num):
+#     if new_num % i == 0:
+#         print(f' the number is not prime number{new_num}')
+#         break
+#     else:
+#         print(f'Your number is prime number {new_num}')
+
+# else:
+#     print(f'Prime number 1 se bara hota hai')
+
+
+# # FactorialNumber
+# Fa_num = int(input("Enter your number "))
+# fact = 1
+# for i in range(1, Fa_num + 1):
+#     fact *= i
+#     print(f'your Factorial number is {Fa_num} is {fact}')
+
+a = ["Ariz", "Salman", "Ali"]
+b = ["Ariz", "Salman", "Ali"]
+
+print(a != b)
+
+a1 = 2
+b1 = 6
+print(a1 <= b1)
+
+
+# Fibonacci sequence
+
+# Fc_num = int(input("Enter your number "))
+
+# for i in range(1, Fc_num-1):
+#     print(Fc_num)
