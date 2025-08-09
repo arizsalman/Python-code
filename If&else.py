@@ -132,7 +132,8 @@ print(a1 <= b1)
 
 # Fibonacci sequence
 
-# Fc_num = int(input("Enter your number "))
-
-# for i in range(1, Fc_num-1):
-#     print(Fc_num)
+Fc_num = int(input("Enter your number "))
+a, b = 0, 1
+for _ in range(1, Fc_num-1):
+    print(a, b)
+    a, b = b, a+b

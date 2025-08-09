@@ -1,3 +1,6 @@
+import random
+
+
 # # #practice
 # # Example in Even
 # for even_num in range(1, 10):
@@ -40,7 +43,6 @@
 #     print(x)
 
 
-
 # for number in range(2):
 #     print("Muhammad Ariz ", number)
 #     print("Muhammad Ariz ", number+1, (number+1)*".")
@@ -48,3 +50,13 @@
 # # Range me hum sirf 3 argument de sakte hn (one is kaha se start karna  he , or second is kaha tak ke jalana he , or third is Last ketna add karna he )
 # for number1 in range(2, 7, 3):
 #     print("Attempt", number1, number1*".")
+
+
+# Table Gentrator
+t_num = int(input("Enter the number"))
+for i in range(1, 11):
+    print(f" {t_num} X {i} = {t_num*i}")
+
+r_num = int(input('Guess  the Number '))
+i = random.randint(1, 20)
+print(f"{i},{r_num}")

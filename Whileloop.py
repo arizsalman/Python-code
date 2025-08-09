@@ -1,5 +1,4 @@
-
-
+import random
 # Kese kam ko bar bar repeat kerne ke leyge used kerte he
 # num = 100
 # while num > 0:
@@ -59,30 +58,44 @@
 #     i = i+1
 
 
+# while True:
+#     str1 = input('Enter your First number or "exit" to quit :')
+#     if str1 == 'exit':
+#         break
+
+#     str2 = input('Enter your Second number  :')
+#     Operator = input('*,+,-,/ :')
+
+#     try:
+
+#         num1 = int(str1)
+#         num2 = int(str2)
+
+#         if Operator == '+':
+#             print("Result:", num1 + num2)
+#         elif Operator == '-':
+#             print("Result ", num1-num2)
+#         elif Operator == '*':
+#             print("Result ", num1*num2)
+#         elif Operator == '/':
+#             print("Result ", num1/num2)
+#         else:
+#             print("Invalid operator.")
+#     except ValueError:
+#         print("Invalid number. Please enter numeric values.")
+#     except ZeroDivisionError:
+#         print("Cannot divide by zero.")
+
 while True:
-    str1 = input('Enter your First number or "exit" to quit :')
-    if str1 == 'exit':
+    g_num = int(input('Guess the Number '))
+    secret = random.randint(1, 10)
+    if secret == g_num:
+        print(f'Your Guess  Number is {g_num} : Genrator Numberd is {secret}')
         break
+try:
 
-    str2 = input('Enter your Second number  :')
-    Operator = input('*,+,-,/ :')
+    else:
+    print(f'Your Number is{g_num} : Genrator Number is {secret}')
 
-    try:
-
-        num1 = int(str1)
-        num2 = int(str2)
-
-        if Operator == '+':
-            print("Result:", num1 + num2)
-        elif Operator == '-':
-            print("Result ", num1-num2)
-        elif Operator == '*':
-            print("Result ", num1*num2)
-        elif Operator == '/':
-            print("Result ", num1/num2)
-        else:
-            print("Invalid operator.")
-    except ValueError:
-        print("Invalid number. Please enter numeric values.")
-    except ZeroDivisionError:
-        print("Cannot divide by zero.")
+except ZeroDivisionError:
+    print(f' any number Number {g_num}')
