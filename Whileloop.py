@@ -86,16 +86,3 @@ import random
 #     except ZeroDivisionError:
 #         print("Cannot divide by zero.")
 
-while True:
-    g_num = int(input('Guess the Number '))
-    secret = random.randint(1, 10)
-    if secret == g_num:
-        print(f'Your Guess  Number is {g_num} : Genrator Numberd is {secret}')
-        break
-try:
-
-    else:
-    print(f'Your Number is{g_num} : Genrator Number is {secret}')
-
-except ZeroDivisionError:
-    print(f' any number Number {g_num}')

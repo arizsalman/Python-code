@@ -60,3 +60,9 @@ for i in range(1, 11):
 r_num = int(input('Guess  the Number '))
 i = random.randint(1, 20)
 print(f"{i},{r_num}")
+
+# TRY AND EXCEPT >>>>
+try:
+    num = int("hello")
+except:
+    print("I will never run Because integer is not convert to string .!")
