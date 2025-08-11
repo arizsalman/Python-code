@@ -18,26 +18,52 @@
 #  min(list)	Sabse chhoti value	min([1,2,3]) → 1
 #  max(list)	Sabse badi value	max([1,2,3]) → 3
 
-# Append Method ye last me add karta he
-name = ["ariz", 'ali']
-name.append("salman")
-print(name)
-print(name[0:2])
-name.remove('salman')
-# remove me list ke ilava kye or value ho ge tu error de ga
-print(name)
+# # Append Method ye last me add karta he
+# name = ["ariz", 'ali']
+# name.append("salman")
+# print(name)
+# print(name[0:2])
+# name.remove('salman')
+# # remove me list ke ilava kye or value ho ge tu error de ga
+# print(name)
 
-number = [1, 2, 3]
-number.append(5)
-print(number)
-number.remove(2)
-print(number)
-print(number[0:3])
+# number = [1, 2, 3]
+# number.append(5)
+# print(number)
+# number.remove(2)
+# print(number)
+# print(number[0:3])
 
 
-# Reverse string
-Alfh = str(input("Enter your Nonu"))
-listA = sorted(Alfh, reverse=True)
-listB = sorted(Alfh, reverse=False)
-print(f'Your Name is Reverse  True ;{listA}')
-print(f'Your Name is Reverse False ;{listB}')
+# # Reverse string
+# Alfh = str(input("Enter your Nonu"))
+# listA = sorted(Alfh, reverse=True)
+# listB = sorted(Alfh, reverse=False)
+# print(f'Your Name is Reverse  True ;{listA}')
+# print(f'Your Name is Reverse False ;{listB}')
+
+
+faimly = ['Ariz', 'Salman']
+faimly.append('Ali')
+print(faimly)
+
+faimly.clear()  # is ne list []clear kar de
+
+print(faimly)
+
+
+num = [0, 1, 1, 1, 2, 3,  4, 5, 6, 7, 8, 9]
+print(num)
+print(num.pop(1))  # ye pop ne minus kya
+print(num)  # or answer deya
+print(num.count(1))  # 1 ko count kar raha he
+
+
+Myname = ['Ariz', 'Salman']
+brother = ['Ali', 'Salman']
+Myname.extend(brother)
+print(Myname)
+Myname.reverse()
+print(Myname)
+Myname.sort()
+print(Myname)
