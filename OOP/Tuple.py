@@ -58,6 +58,9 @@
 # .append() → list me ek naya element add karna
 # tuple() → list ko tuple me badalna
 
+# Code Sahe nahe hai 
+
+
 Temperature = []
 while True:
     temp = input(
