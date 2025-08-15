@@ -13,33 +13,32 @@
 
 Temperature = []
 while True:
-    temp = input("Enter the temperature  Number You exit type done ")
+    temp = input('Enter the temperature number and  exit is type done ')
     if temp.lower() == 'done':
         break
     try:
         Temperature.append(float(temp))
     except ValueError:
-        print(f'Please enter a Invalaid number ')
+        print('Please Enter Invalaid number ')
+Temperature_tule = tuple(Temperature)
+print(f'Total  Temperature is :{Temperature} *C ')
+print(f'Total Number Of Temperature is :{len(Temperature)}')
+print(f'Minum Number Of Temperature is :{min(Temperature)}')
+print(f'Maxium Number Of Temperature is :{max(Temperature)}')
 
-Temperature_tuple = tuple(Temperature)
-print(f'Your temperature list is this : {Temperature}')
-print(f'Your temperature Length is this : {len(Temperature)}')
-print(f'Your temperature Length is this : {max(Temperature)}')
-print(f'Your temperature Length is this : {min(Temperature)}')
+temp_Value = input("Enter a temperature Number ")
+if temp_Value in Temperature_tule:
+    print(f'Total Count Temperature is {Temperature_tule.count(temp_Value)}')
+    print(f'Total Index Temperature is {Temperature_tule.index(temp_Value)}')
 
-temp_value = float(input('Enter a temperature value '))
-if temp_value in Temperature_tuple:
-    print(f' YOur count Value is :{Temperature_tuple.count(temp_value)}')
-    print(f' YOur Index Value is :{Temperature_tuple.index(temp_value)}')
-else:
-    print(f' If not exist')
+SumTemp = (temp_Value,)+Temperature_tule
+print(f'Total Temperature is :{SumTemp}')
+print(f'Total first   temperature  is :{SumTemp[0]}')
+print(f'Total  last  temperature  is :{SumTemp[-1]}')
 
-final_Temp = (temp_value,)+Temperature_tuple
-print(f'Sum of the Temperature is : {final_Temp}')
-print(f'Sum of the Temperature is : {final_Temp[0:-1]}')
+check_temp = input('Check  the  temperature')
 
-check_temp = input('Enter the temperature exists in the tuple ')
-if check_temp in final_Temp:
+if check_temp in Temperature_tule:
     print(True)
 else:
     print(False)
