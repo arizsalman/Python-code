@@ -58,44 +58,32 @@
 # .append() → list me ek naya element add karna
 # tuple() → list ko tuple me badalna
 
-# Code Sahe nahe hai 
+# Code Sahe nahe hai
 
 
-Temperature = []
+favourite_Friut = []
 while True:
-    temp = input(
-        "Please enter Your city Temparature And You are exit so type done ")
-    if temp.lower() == "done":
-        break
+    friut = input("Enter your five favourite friuts ")
     try:
-        Temperature.append(float(temp))
-
+        favourite_Friut.append(friut)
     except ValueError:
-        print(f" Please Vailad Number")
+        print(f'Please Invalaid Fruit Name')
+    if len(favourite_Friut) >= 5:
+        break
+print(type(friut))
+print(type(favourite_Friut))
+if "Mango" in favourite_Friut:
+    print(f" Fruit me mango itne par he :{favourite_Friut.count('Mango')}")
+else:
+    print(" The is No Mango in Your  list ")
 
-    Temperature_tuple = tuple(Temperature)
+print(f" Fruit me Apple itne par he :{favourite_Friut.count('Apple')}")
 
-    print(f"your temperature list is {Temperature_tuple}")
-    print(f"your temperature length is {len(Temperature_tuple)}")
-    print(f"your temperature length is {min(Temperature_tuple)}")
-    print(f"your temperature length is {max(Temperature_tuple)}")
+if 'Banana' in favourite_Friut:
+    print(f" Fruit me Banana Index :{favourite_Friut.index('Banana')}")
+else:
+    print('Not found')
 
-    search_value = float(input("Enter the Temperature for show you "))
-    if search_value in Temperature_tuple:
-        print(
-            f"This Temperature appears{Temperature_tuple.count(search_value)}")
-        print(
-            f" First occurrence index{Temperature_tuple.index(search_value)}")
 
-    else:
-        print(F'This Temperature is not Exist in Tuple ')
-
-    Temperature_Sum = (search_value,)+Temperature_tuple
-    print(f'The total Concatenate Value is {Temperature_Sum}')
-    print(f'Slice first and end Number is {Temperature_tuple[0:-1]}')
-
-    for search_value in Temperature_tuple:
-        print(f"{search_value}'C is exist ")
-
-    else:
-        print(f"{search_value}'C is not exist ")
+print(f' Fruit me mango itne par he :{favourite_Friut}')
+print(f' Fruit me mango itne par he :{len(favourite_Friut)}')
