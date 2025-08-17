@@ -57,7 +57,8 @@
 #     'fname': 'Muhammad Ariz',
 #     'sname': 'Umer'
 # }
-
+# student2.pop('name')
+# print(student2)
 # for key in student2:
 #     print(key)
 
@@ -76,21 +77,58 @@
 # print(student3.get("age")) #Safe value return (error nahi deta)
 
 # nested dictionary
-student7 = {
-    101: {'name': "Ali", "age": 23},
-    102: {'name': "Areesh", "age": 25},
-    103: {'name': "Aashir", "age": 29}
-}
+# student7 = {
+#     101: {'name': "Ali", "age": 23},
+#     102: {'name': "Areesh", "age": 25},
+#     103: {'name': "Aashir", "age": 29}
+# }
 
-for data in student7.values():
-    data.update([("coures", 'Python')])
-for roll, detail in student7.items():
-    detail_i = ",".join(f"{repr(k)}:{repr(v)}" for k, v in detail.items())
-    print(f"{roll}->{detail_i}")
-    # print(','.join(f"{repr(k)}:{repr(v)}"for k, v in student7.items()))
-    # print(student7)
-    # print(list(student7))
+# for data in student7.values():
+#     data.update([("coures", 'Python')])
+# for roll, detail in student7.items():
+#     detail_i = ",".join(f"{repr(k)}:{repr(v)}" for k, v in detail.items())
+#     print(f"{roll}->{detail_i}")
+# print(','.join(f"{repr(k)}:{repr(v)}"for k, v in student7.items()))
+# print(student7)
+# print(list(student7))
 
 
 # numi = {x: x**2 for x in range(1, 6)}
 # print(numi)
+
+
+# # Ek dictionary banao jisme roll numbers keys ho aur names values. Fir user se roll number lo aur uska naam print karo.
+# studentr = {
+#     101: 'Ariz',
+#     102: 'Areesh',
+#     103: 'Babar',
+#     104: 'Farhan',
+#     105: 'Furkan'
+# }
+
+# for roll, namest in studentr.items():
+
+#     print(f'{roll}=> {namest}')
+
+
+# user = int(input("Please Enter your Roll Number "))
+# if user in studentr:
+#     print(f'your Roll Number id {user} and your Name is {studentr[user]}')
+# else:
+#     print(f'Please enter the Valaid roll number Roll Number is Not found ')
+
+student_Ins = {
+    101: {"name": "Ariz", "age": 24},
+    102: 'Areesh',
+    103: {"name": 'Babar', "age": 12},
+    104: 'Farhan',
+
+}
+
+for roll, str in student_Ins.items():
+    if isinstance(str, dict):
+        student_Detail = ",".join(
+            f"{repr(k)}:{repr(v)}" for k, v in str.items())
+        print(f'{roll} => {student_Detail}')
+    else:
+        print(f" {roll} => {str}")
