@@ -12,8 +12,8 @@
 # }
 # print(" ,".join(f" {repr(k)}:{repr(v)}" for k, v in detail.items()))
 
-# is ka ouput yehe  name,age...why because ye samjta he jab hum dictionary ko direct pass karte he tu python key ko iterable samjta he..
-# or jab  hum dictionary ko directly  iterate ya acces karte he tu python  ye samjta he ke key as a iterable he is ko he show kara do
+""" is ka ouput yehe  name,age...why because ye samjta he jab hum dictionary ko direct pass karte he tu python key ko iterable samjta he..
+# or jab  hum dictionary ko directly  iterate ya acces karte he tu python  ye samjta he ke key as a iterable he is ko he show kara do""" "ye multi line  commit ky=hlata he"
 # print(','.join(detail))
 # # print(detail)
 # print(list(detail))
@@ -117,18 +117,43 @@
 # else:
 #     print(f'Please enter the Valaid roll number Roll Number is Not found ')
 
-student_Ins = {
-    101: {"name": "Ariz", "age": 24},
-    102: 'Areesh',
-    103: {"name": 'Babar', "age": 12},
-    104: 'Farhan',
+# student_Ins = {
+#     101: {"name": "Ariz", "age": 24},
+#     102: 'Areesh',
+#     103: {"name": 'Babar', "age": 12},
+#     104: 'Farhan',
 
+# }
+
+# for roll, str in student_Ins.items():
+#     if isinstance(str, dict):
+#         student_Detail = ",".join(
+#             f"{repr(k)}:{repr(v)}" for k, v in str.items())
+#         print(f'{roll} => {student_Detail}')
+#     else:
+#         print(f" {roll} => {str}")
+
+
+studentsn = {
+    101: {"name": "Ariz", "age": 20},
+    "102": "Babar",
+    103: 25,
+    "104": 3.14
 }
 
-for roll, str in student_Ins.items():
-    if isinstance(str, dict):
-        student_Detail = ",".join(
-            f"{repr(k)}:{repr(v)}" for k, v in str.items())
-        print(f'{roll} => {student_Detail}')
+for roll, value in studentsn.items():
+    if isinstance(roll, int):
+        print(f'your key  Roll number is: {roll}')
+    elif isinstance(roll, str):
+        print(f'Your Value is  string :{roll}')
+    if isinstance(value, dict):
+        stu_de = ",".join(f"{repr(k)}:{repr(v)}"for k, v in studentsn.items())
+        print(f'Value is Dictionary is : {stu_de}')
+    elif isinstance(value, str):
+        print(f'Value in Dictionary is {value}')
+    elif isinstance(value, int):
+        print(f' Value in Dictionary is {value}')
+    elif isinstance(value, float):
+        print(f'Value is Dictionary is {value}')
     else:
-        print(f" {roll} => {str}")
+        print(f'Your Dictionary value is Unkown->{value}')
