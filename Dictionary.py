@@ -138,7 +138,10 @@ studentsn = {
     101: {"name": "Ariz", "age": 20},
     "102": "Babar",
     103: 25,
-    "104": 3.14
+    "104": 3.14,
+    "105": True,
+    "106":  [1, 2, 3],
+    "107":  [(1, 2), (2, 8)]
 }
 
 for roll, value in studentsn.items():

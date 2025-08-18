@@ -56,7 +56,6 @@
 # #  { 0, "" None }ye value boolen me  false and anthing are ture
 
 
-
 # # Loops ;repeated work ke leye hote he
 # successful1 = False
 # for number9 in range(3):
@@ -77,3 +76,9 @@
 # name = ['ariz', 'salman', "ali"]
 # for English in name:
 #     print(English)
+a, b, c = 12, 8, 20
+
+print(a, b, c, sep=",")     # 12,8,20
+print(a, b, c, sep=" - ")   # 12 - 8 - 20
+print(a, b, c, sep="|")     # 12|8|20
+print(a, b, c, sep="XYZ")   # 12XYZ8XYZ20
