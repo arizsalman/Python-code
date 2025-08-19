@@ -80,11 +80,11 @@
 # print(mul(2, 20))
 
 
-def add(num1):
-    return 20+30
+# def add(num1):
+#     return 20+30
 
 
-print(add(1))
+# print(add(1))
 
 
 # def add1(num1, num2):
@@ -144,32 +144,32 @@ print(add(1))
 # user_Name('Babar')
 
 
-def add(a, b):
-    return (a+b)
+# def add(a, b):
+#     return (a+b)
 
 
-add(20, 30)
-""" ak ye bhe tareqa he kam karne ka """
+# add(20, 30)
+# """ ak ye bhe tareqa he kam karne ka """
 
 # Function with Return Value
 
 
-def sum(a, b):
-    return (a + b)
+# def sum(a, b):
+#     return (a + b)
 
 
-sumab = sum(20, 30)
-sum(20, 30)
-print("Sum is:", sumab)
+# sumab = sum(20, 30)
+# sum(20, 30)
+# print("Sum is:", sumab)
 
 
-# Default Parameters
-def defualt(name="ariz"):
-    print(f'My Name is {name}')
+# # Default Parameters
+# def defualt(name="ariz"):
+#     print(f'My Name is {name}')
 
 
-defualt()  # jab kyo function ko call kare without value to default method kam ata he
-defualt('Ali')  # Ye nromal condition he :
+# defualt()  # jab kyo function ko call kare without value to default method kam ata he
+# defualt('Ali')  # Ye nromal condition he :
 
 
 # Multiple Return Values
@@ -195,16 +195,16 @@ defualt('Ali')  # Ye nromal condition he :
 # print(sum_abc, diff, prod)
 
 
-def nam(name):
-    print(f"hi!{name}")
+# def nam(name):
+#     print(f"hi!{name}")
 
 
-b = nam('Ariz')
-print(b)
+# b = nam('Ariz')
+# print(b)
 
 
-def greet():
-    return "Hello Ariz!"
+# def greet():
+#     return "Hello Ariz!"
 
 
 """Agar tumhe function ka result sirf ek baar dikhana hai → direct print(greet()) use karo.
@@ -223,25 +223,60 @@ Agar tumhe function ka result baar-baar use karna hai (modify karna, store karna
 👉 Tumhe bataana hai ke agar main print(square(5)) likhun to output kya hoga.'''
 
 
-def square(num):
-    return num**2
+# def square(num):
+#     return num**2
 
 
-squa = square(5)
-print(squa)
+# squa = square(5)
+# print(squa)
 
 
-def trip(e, f):
-    return (e*f)
+# def trip(e, f):
+#     return (e*f)
 
 
-tr = trip(4, 6)
-print(tr)
+# tr = trip(4, 6)
+# print(tr)
 
 
-def trm(nus):
-    return nus**3
+# def trm(nus):
+#     return nus**3
 
 
-tm = trm(3)
-print(tm)
+# tm = trm(3)
+# print(tm)
+
+
+# def great(nam='Ariz'):
+#     print('hello', nam)
+
+# great()
+
+
+# def add(a, b):
+#     print(a + b)
+
+
+# x = add(3, 7)
+# print(x)
+
+
+# def add(a, b):
+#     return a + b
+
+
+# x = add(3, 7)
+# print(x)
+
+# nm = int(input("Enter your number "))
+
+def check_even(nom):
+
+    if nom % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+
+nm = check_even(9)
+print(nm)
