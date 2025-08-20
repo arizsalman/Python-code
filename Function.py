@@ -270,13 +270,15 @@ Agar tumhe function ka result baar-baar use karna hai (modify karna, store karna
 
 # nm = int(input("Enter your number "))
 
-def check_even(nom):
+# def check_even(nom):
 
-    if nom % 2 == 0:
-        return "Even"
-    else:
-        return "Odd"
+#     if nom % 2 == 0:
+#         return "Even"
+#     else:
+#         return "Odd"
 
 
-nm = check_even(9)
-print(nm)
+# nm = check_even(9)
+# print(nm)
+
+
