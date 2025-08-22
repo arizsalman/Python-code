@@ -191,29 +191,77 @@ us list me ham dekhe ge ke kon sa number bara bhe  ."""
 # print(big_list)
 
 
-def func():
-    big_list = []
-    while True:
-        user_num = input('Enter your number end exit type "done"')
-        if user_num.lower().strip() == "done":
-            break
-        try:
-            num = int(user_num)  # ye string se integer pe kare ga
-            big_list.append(num)
-        except ValueError:
-            print(f'Please enter a valid number ')
+# def func():
+#     big_list = []
+#     while True:
+#         user_num = input('Enter your number end exit type "done"')
+#         if user_num.lower().strip() == "done":
+#             break
+#         try:
+#             num = int(user_num)  # ye string se integer pe kare ga
+#             big_list.append(num)
+#         except ValueError:
+#             print(f'Please enter a valid number ')
 
-        print(big_list)
-    if not big_list:
-        return f'Number will Entered '
-    maximum = big_list[0]
-    for i in big_list:#→ list ke har number ko ek ek karke i me lo. 
-        if i > maximum: #→ agar current number i ab tak ke maximum se bada hai, to:
-            maximum = i #“maximum” ko update kar do.
-            """Left side = jis variable ko update karna hai
-            👉 Right side = jis value se update karna hai"""
-    return f"' YOu're Maximum value {maximum}"
+#         print(big_list)
+#     if not big_list:
+#         return f'Number will Entered '
+#     maximum = big_list[0]
+#     for i in big_list:  # → list ke har number ko ek ek karke i me lo.
+#         if i > maximum:  # → agar current number i ab tak ke maximum se bada hai, to:
+#             maximum = i  # “maximum” ko update kar do.
+#             """Left side = jis variable ko update karna hai
+#             👉 Right side = jis value se update karna hai"""
+#     return f"' YOu're Maximum value {maximum}"
 
 
-big_list = func()
-print(big_list)
+# big_list = func()
+# print(big_list)
+
+
+''''Function likho jo ek string le aur count kare kitne vowels (a, e, i, 
+o, u) hain'''
+
+
+def count_vowels(text):
+    vowels = "aeiou"
+    count = 0
+    for char in text.lower():  # lowercase kar liya taake 'A' bhi count ho
+        if char in vowels:
+            count += 1
+    return count
+
+
+print(count_vowels("Hello World"))   # output: 3 (e, o, o)
+print(count_vowels("ARIZ"))
+
+
+# def func():
+#     vowels = 'a,e,i,o,u'
+#     count = 0
+#     user_name = input('Enter your Name ')
+#     for i in user_name.lower():
+#         if i in vowels:
+#             count += 1  # count =count +1 dono same he
+#     return count
+
+
+# count_Vowels = func()
+# print(f" this is your name Vowels Value  :{count_Vowels}")
+
+
+"""Function likho jo ek list le aur sirf unique elements return kare (duplicate hata de)."""
+
+
+def func(duplcate):
+    uniqe = list(set(duplcate))
+    """Set() ye Ek unordered collection hai → matlab order fix nahi hota.
+
+     Duplicates allow nahi karta (automatic remove kar deta hai).
+ 
+     Indexing nahi hoti (direct element access nahi kar sakte index se)."""
+    return uniqe
+
+
+duble = func([1, 2, 2, 3, 3, 4, 6, 5, 7, 8, 9, 0, 2, 3, 1, 2, 4])
+print(duble)
