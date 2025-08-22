@@ -162,6 +162,35 @@ first pe start  stop  step like kya karne he add etc
 us list me ham dekhe ge ke kon sa number bara bhe  ."""
 
 
+# def func():
+#     big_list = []
+#     while True:
+#         user_num = input('Enter your number end exit type "done"')
+#         if user_num.lower().strip() == "done":
+#             break
+#         try:
+#             num = int(user_num)  # ye string se integer pe kare ga
+#             big_list.append(num)
+#         except ValueError:
+#             print(f'Please enter a valid number ')
+
+#         print(big_list)
+
+#     if not big_list:
+#         return " No Number etered"
+
+#     maximum = big_list[0]
+#     for i in big_list:
+#         if i > maximum:
+#             maximum = i
+
+#     return f" Maximum Number is : {maximum}"
+
+
+# big_list = func()
+# print(big_list)
+
+
 def func():
     big_list = []
     while True:
@@ -175,16 +204,15 @@ def func():
             print(f'Please enter a valid number ')
 
         print(big_list)
-
     if not big_list:
-        return " No Number etered"
-
+        return f'Number will Entered '
     maximum = big_list[0]
-    for i in big_list:
-        if i > maximum:
-            maximum = i
-
-    return f" Maximum Number is : {maximum}"
+    for i in big_list:#→ list ke har number ko ek ek karke i me lo. 
+        if i > maximum: #→ agar current number i ab tak ke maximum se bada hai, to:
+            maximum = i #“maximum” ko update kar do.
+            """Left side = jis variable ko update karna hai
+            👉 Right side = jis value se update karna hai"""
+    return f"' YOu're Maximum value {maximum}"
 
 
 big_list = func()
