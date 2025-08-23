@@ -20,9 +20,11 @@ print("area:", round(a, 2), " circumference:", round(c, 4))
 '''* Jab tum function me *args likhte ho, iska matlab hai ki jitne bhi extra arguments pass karoge wo tuple me collect ho jayenge
 or sum ()kya he  : ye ak method he jo value ko add karta he 
 '''
-
+"""* args jo he vo argument ko handle karta he """
 
 def sum_all(*args):
+    print(args) # ye tuple return karta he
+    print(*args)
     return sum(args)
 
 
