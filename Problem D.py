@@ -1,19 +1,3 @@
-flour, sugar = 550, 250
-
-cake = min(flour//100, sugar//50)
-remaining_flour = flour - cake*100
-remaining_sugar = sugar - cake*50
-
-print(cake)
-print(remaining_flour)
-print(remaining_sugar)
-
-
-"""Description:
-The baker can bake 5 cakes because flour is the limiting ingredient.
-After baking, 50 units of flour and 70 units of sugar remain.
-The algorithm ensures resources are used optimally.
-Complexity: O(1) — constant time calculations"""
 
 grid = [
     ["L", "E", "A", "R", "N"],
@@ -51,7 +35,35 @@ for w in words:
     print(w, "found" if find_word(w) else "not found")
 
 
-"""A Word Search Puzzle is a game where words are hidden inside a 2D grid of letters.
- The words can appear in any direction: horizontally, vertically, or diagonally (forward or backward).
- The goal is to find all the given words inside the grid.
-"""
+# A Word Search Puzzle is a game where words are hidden inside a 2D grid of letters.
+#  The words can appear in any direction: horizontally, vertically, or diagonally (forward or backward).
+#  The goal is to find all the given words inside the grid.
+
+def func(num_final):
+    seem = set()
+    for i in num_final:
+        if i in seem:
+            return True
+        else:
+            seem.add(i)
+    return False
+
+
+num_final = []
+while True:
+    nums = input("Enter your number & Exit Type 'done':")
+    if nums.strip().lower() == "done":
+        break
+    try:
+        value = int(nums)
+        print(f'Your entered {value}')
+    except ValueError:
+        print("Please Enter in valiad Value")
+
+    num_final.append(value)
+    print(f'Your Value {num_final}')
+
+    if func(num_final):
+        print(f'Duplicate Found ')
+    else:
+        print(f' No Duplicate')
